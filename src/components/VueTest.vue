@@ -1,6 +1,7 @@
 <template>
     <div>
-        <div id="name">{{name}}</div>        
+        <div id="name">{{name}}</div>     
+        <PubComponent name="我是公共组件的属性"></PubComponent>
         <router-view/>
         <div>
         <a-menu
@@ -33,8 +34,9 @@
 </template>
 <script>
 
-
+import PubComponent from './PubComponent'
 export default {
+  components: {PubComponent},  
   name:'HelloWorld',
   data(){
     return {

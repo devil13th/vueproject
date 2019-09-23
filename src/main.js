@@ -5,7 +5,6 @@ import App from './App'
 import router from './router'
 import {DatePicker,Table,Button,Rate,Menu} from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
-
 Vue.use(DatePicker)
 Vue.use(Table)
 Vue.use(Button)

@@ -4,6 +4,7 @@
     <router-link to="/test/test01">test01</router-link>
     <router-link to="/test">test</router-link>
     <router-link to="/">HelloWorld</router-link>
+    <router-link to="/HelloWorld">HelloWorld</router-link>
     <router-view/>
   </div>
 </template>
