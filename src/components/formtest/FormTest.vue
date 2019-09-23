@@ -16,12 +16,12 @@
               :md="{span:12}"
               :lg="{span:8}"
             >
-              <a-form-item 
+              <a-form-item                                 
                 label="Audit Type"
                 :label-col="labelCol"
                 :wrapper-col="wrapperCol"
               >
-                <a-select v-model="formData.auditType" defaultValue="Annual Audit" @change="handleChange">
+                <a-select :size="size" v-model="formData.auditType" defaultValue="Annual Audit" @change="handleChange">
                   <a-select-option value="Annual Audit">Annual Audit</a-select-option>
                   <a-select-option value="Certify Audit">Certify Audit</a-select-option>
                   <a-select-option value="Quality Issue Audit" >Quality Issue Audit</a-select-option>
@@ -41,7 +41,7 @@
                 :label-col="labelCol"
                 :wrapper-col="wrapperCol"
               >
-                <a-select v-model="formData.reAudit" defaultValue="N" @change="handleChange">
+                <a-select :size="size" v-model="formData.reAudit" defaultValue="N" @change="handleChange">
                   <a-select-option value="N">N</a-select-option>
                   <a-select-option value="Y">Y</a-select-option>
                 </a-select>
@@ -62,6 +62,7 @@
                 
               >
                 <a-input-search
+                  :size="size"
                   v-model="formData.relatedRecordNo"
                   @search="onSearch"
                 />
@@ -82,7 +83,7 @@
                 :wrapper-col="wrapperCol"
                 
               >
-                <a-select v-model="formData.commodityName" defaultValue="Test1" >
+                <a-select :size="size" v-model="formData.commodityName" defaultValue="Test1" >
               
                   <a-select-option
                     v-for="item in testData"
@@ -109,6 +110,7 @@
                 
               >
                 <a-input
+                  :size="size"
                   v-model="formData.commodityCode"
                 />
               
@@ -127,7 +129,7 @@
                 :label-col="labelCol"
                 :wrapper-col="wrapperCol"
               >
-                <a-input v-model="formData.product" />
+                <a-input :size="size" v-model="formData.product" />
               </a-form-item> 
             </a-col>
             
@@ -145,6 +147,7 @@
                 
               >
                 <a-input-search
+                  :size="size"
                   v-model="formData.vendorName"
                   @search="onSearch"
                 />
@@ -163,6 +166,7 @@
                 :wrapper-col="wrapperCol"
               >
                 <a-input
+                  :size="size"
                   v-model="formData.vendorCode"
                 />
               </a-form-item>
@@ -176,12 +180,14 @@
               :lg="{span:8}"
             >
               <a-form-item 
+                :size="size"
                 label="Vendor Site"
                 :label-col="labelCol"
                 :wrapper-col="wrapperCol"
                 
               >
                 <a-input
+                  :size="size"
                   v-model="formData.vendorSite"
                 />
               </a-form-item>
@@ -201,6 +207,7 @@
                 
               >
               <a-select
+                :size="size"
                 showSearch
                 placeholder="Select JQE"
                 optionFilterProp="children"
@@ -230,18 +237,19 @@
                 
               >
                 <a-select
-                showSearch
-                placeholder="Select SQE"
-                optionFilterProp="children"
-                @focus="handleFocus"
-                @blur="handleBlur"
-                @change="handleChange"
-                :filterOption="filterOption"
-              >
-                <a-select-option value="jack">Jack</a-select-option>
-                <a-select-option value="lucy">Lucy</a-select-option>
-                <a-select-option value="tom">Tom</a-select-option>
-              </a-select>
+                  :size="size"
+                  showSearch
+                  placeholder="Select SQE"
+                  optionFilterProp="children"
+                  @focus="handleFocus"
+                  @blur="handleBlur"
+                  @change="handleChange"
+                  :filterOption="filterOption"
+                >
+                  <a-select-option value="jack">Jack</a-select-option>
+                  <a-select-option value="lucy">Lucy</a-select-option>
+                  <a-select-option value="tom">Tom</a-select-option>
+                </a-select>
               </a-form-item>
             </a-col>
 
@@ -259,6 +267,7 @@
                 
               >
                 <a-input
+                  :size="size"
                   v-model="formData.sqeManager"
                 />
               </a-form-item>
@@ -278,6 +287,7 @@
                 
               >
                 <a-input
+                  :size="size"
                   v-model="formData.planDate"
                 />
               </a-form-item>
@@ -297,6 +307,7 @@
                 
               >
                 <a-input
+                  :size="size"
                   v-model="formData.createDate"
                 />
               </a-form-item>
@@ -329,9 +340,11 @@ export default {
   data () {
     return {
       labelCol:{span:8},
+      size:"default",
       wrapperCol:{span:16},
       expand: false,
       form: this.$form.createForm(this),
+      activeKey:['1'],
       formData : {
         relatedRecordNo : "A20190101001",
         reAudit:"Y",

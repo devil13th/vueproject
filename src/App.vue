@@ -16,7 +16,7 @@
             <a-menu-item key="2"><router-link to="/RouterParent">RouterParent</router-link></a-menu-item>
             <a-menu-item key="3"><router-link to="/RouterParent/RouterChild">RouterChild</router-link></a-menu-item>
             <a-menu-item key="4"><router-link to="/StateTest">StateTest</router-link></a-menu-item>
-            <a-menu-item key="4"><router-link to="/FormTest">FormTest</router-link></a-menu-item> 
+            <a-menu-item key="5"><router-link to="/FormTest">FormTest</router-link></a-menu-item> 
             
           </a-sub-menu>
           <a-sub-menu key="sub2">
