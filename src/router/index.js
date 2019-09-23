@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Xd from '@/components/VueTest'
-import test01 from '@/components/VueTest01'
-
+import RouterParent from '@/components/routertest/RouterParent'
+import RouterChild from '@/components/routertest/RouterChild'
+import StateTest from '@/components/statetest/StateStore'
+import FormTest from '@/components/formtest/FormTest'
 Vue.use(Router)
 
 export default new Router({
@@ -14,18 +15,34 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/test',
-      name: 'test',
-      component: Xd,
+      path: '/RouterParent',
+      name: 'RouterParent',
+      component: RouterParent,
       children:[
         {//三级路由
-          path: '/test/test01',
-          name: 'test01',
-          component: test01
+          path: '/RouterParent/RouterChild',
+          name: 'RouterChild',
+          component: RouterChild
         }
       
       ]
 
-    }
+    },
+
+    {
+      path: '/StateTest',
+      name: 'StateTest',
+      component: StateTest
+    },
+
+    {
+      path: '/FormTest',
+      name: 'FormTest',
+      component: FormTest
+    },
+
+    
+
+    
   ]
 })
