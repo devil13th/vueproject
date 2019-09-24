@@ -5,10 +5,9 @@
 </template>
 <script>
 
-
 export default {
   name:'PubComponent',
-  props:["name"],
+  props:["name"], //定义属性
   data(){
     return {
       age:"我是组件内部属性"

@@ -6,7 +6,11 @@ import router from './router'
 import store from './store'//引入store
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
+
 Vue.use(Antd)//引用全部antd组件
+
+
+
 
 /*
 import {DatePicker,Table,Button,Rate,Menu,Layout,Icon,Breadcrumb} from 'ant-design-vue'

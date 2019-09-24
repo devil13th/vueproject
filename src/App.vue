@@ -17,6 +17,7 @@
             <a-menu-item key="3"><router-link to="/RouterParent/RouterChild">RouterChild</router-link></a-menu-item>
             <a-menu-item key="4"><router-link to="/StateTest">StateTest</router-link></a-menu-item>
             <a-menu-item key="5"><router-link to="/FormTest">FormTest</router-link></a-menu-item> 
+            <a-menu-item key="6"><router-link to="/StateTest/Cpmt03">Vuex</router-link></a-menu-item>  
             
           </a-sub-menu>
           <a-sub-menu key="sub2">

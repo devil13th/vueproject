@@ -5,6 +5,7 @@ import RouterParent from '@/components/routertest/RouterParent'
 import RouterChild from '@/components/routertest/RouterChild'
 import StateTest from '@/components/statetest/StateStore'
 import FormTest from '@/components/formtest/FormTest'
+import Cpmt03 from '@/components/statetest/Cpmt03'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +34,11 @@ export default new Router({
       path: '/StateTest',
       name: 'StateTest',
       component: StateTest
+    },
+    {
+      path: '/StateTest/Cpmt03',
+      name: 'Cpmt03',
+      component: Cpmt03
     },
 
     {
