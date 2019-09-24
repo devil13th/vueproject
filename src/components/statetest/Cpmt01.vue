@@ -2,7 +2,7 @@
     <div>
       <div id="counter"> 私有计数:{{count}}</div>
       <div id="counter"> 全局计数:{{this.$store.state.count}}</div>
-      <div id="counter"> 全局计数getter:{{this.$store.getters.getCount}}</div>
+      <div id="counter"> 全局计数getter:{{this.$store.getters.getCounts}}</div>
       <input type="input"  v-model="factor"/> 
       <input type="button" value="Add" @click="addCount(2)"/> 
       <input type="button" value="延时1秒后再加(模拟异步)" @click="addCountDelay(2)"/> 

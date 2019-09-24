@@ -6,6 +6,7 @@ import RouterChild from '@/components/routertest/RouterChild'
 import StateTest from '@/components/statetest/StateStore'
 import FormTest from '@/components/formtest/FormTest'
 import Cpmt03 from '@/components/statetest/Cpmt03'
+import VuexTest from '@/components/vuextest/VuexTest'
 Vue.use(Router)
 
 export default new Router({
@@ -19,17 +20,14 @@ export default new Router({
       path: '/RouterParent',
       name: 'RouterParent',
       component: RouterParent,
-      children:[
-        {//三级路由
+      children: [
+        {// 三级路由
           path: '/RouterParent/RouterChild',
           name: 'RouterChild',
           component: RouterChild
         }
-      
       ]
-
     },
-
     {
       path: '/StateTest',
       name: 'StateTest',
@@ -47,8 +45,10 @@ export default new Router({
       component: FormTest
     },
 
-    
-
-    
+    {
+      path: '/vuextest',
+      name: 'VuexTest',
+      component: VuexTest
+    }
   ]
 })
