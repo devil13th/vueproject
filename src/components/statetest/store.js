@@ -5,7 +5,7 @@ let componentState = {
     factor: 1
   },
   getters: {// 实时监听state值的变化(最新状态)
-    getCounts (state) { // 方法名随意,主要是来承载变化的Count的值
+    getCount (state) { // 方法名随意,主要是来承载变化的Count的值
       console.log('get state.count')
       return state.count
     },

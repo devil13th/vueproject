@@ -13,7 +13,7 @@
           :md="{span:24}"
           :lg="{span:24}"
         >
-          <a-form-item         
+          <a-form-item
             :colon="colon"                        
             label="Finding"
             :label-col="labelCol"
