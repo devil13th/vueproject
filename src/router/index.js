@@ -7,6 +7,7 @@ import StateTest from '@/components/statetest/StateStore'
 import FormTest from '@/components/formtest/FormTest'
 import Cpmt03 from '@/components/statetest/Cpmt03'
 import VuexTest from '@/components/vuextest/VuexTest'
+import AuditList from '@/components/formtest/AuditList'
 Vue.use(Router)
 
 export default new Router({
@@ -43,6 +44,11 @@ export default new Router({
       path: '/FormTest',
       name: 'FormTest',
       component: FormTest
+    },
+    {
+      path: '/AuditList',
+      name: 'AuditList',
+      component: AuditList
     },
 
     {

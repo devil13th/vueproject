@@ -297,7 +297,7 @@
 
 
             <a-col 
-              :xs="{span:24}" 
+              :xs="{span:24}"
               :sm="{span:24}"
               :md="{span:12}"
               :lg="{span:8}"
@@ -316,7 +316,7 @@
                 
               </a-form-item>
             </a-col>
-          </a-row>          
+          </a-row>
         </a-form>
         
 
@@ -366,7 +366,7 @@
             <a-col 
               span="24"
             >
-              <a-form-item           
+              <a-form-item
                 :colon="colon"                      
                 label="Conclusion"
                 :label-col="{span:4}"
@@ -428,7 +428,7 @@
       }"
       okText="Save"
     >
-      <Finding>xxx</Finding>
+      <Finding></Finding>
     </a-modal>
 
 
