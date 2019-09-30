@@ -6,8 +6,8 @@
       layout="inline"
     >
       <a-row :gutter="24">
-        <a-col 
-          :xs="{span:24}" 
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
@@ -24,16 +24,16 @@
               <a-select-option value="Quality Issue Audit" >Quality Issue Audit</a-select-option>
               <a-select-option value="NPI Stage Audit">NPI Stage Audit</a-select-option>
             </a-select>
-          </a-form-item> 
+          </a-form-item>
         </a-col>
 
-        <a-col 
-          :xs="{span:24}" 
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
         >
-          <a-form-item 
+          <a-form-item
             :colon="colon"
             label="Re-Audit"
             :label-col="labelCol"
@@ -43,47 +43,45 @@
               <a-select-option value="N">N</a-select-option>
               <a-select-option value="Y">Y</a-select-option>
             </a-select>
-          </a-form-item> 
+          </a-form-item>
         </a-col>
 
-
-        <a-col 
-          :xs="{span:24}" 
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
         >
-          <a-form-item 
+          <a-form-item
             :colon="colon"
             label="Related No."
             :label-col="labelCol"
             :wrapper-col="wrapperCol"
-            
+
           >
             <a-input-search
               :size="size"
               v-model="formData.relatedRecordNo"
             />
-          </a-form-item> 
+          </a-form-item>
         </a-col>
 
-
-        <a-col 
-          :xs="{span:24}" 
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
         >
-        
-          <a-form-item 
+
+          <a-form-item
             :colon="colon"
             label="Commodity"
             :label-col="labelCol"
             :wrapper-col="wrapperCol"
-            
+
           >
             <a-select :size="size" v-model="formData.commodityName" defaultValue="Test1" >
-          
+
               <a-select-option
                 v-for="item in testData"
                 :key="item.key"
@@ -91,62 +89,60 @@
               >
                 {{item.value}}
               </a-select-option>
-            
+
             </a-select>
-          </a-form-item> 
+          </a-form-item>
         </a-col>
 
-        <a-col 
-          :xs="{span:24}" 
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
         >
-          <a-form-item 
+          <a-form-item
             :colon="colon"
             label="Code"
             :label-col="labelCol"
             :wrapper-col="wrapperCol"
-            
+
           >
             <a-input
               :size="size"
               v-model="formData.commodityCode"
             />
-          
+
           </a-form-item>
         </a-col>
 
-
-        <a-col 
-          :xs="{span:24}" 
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
         >
-          <a-form-item 
+          <a-form-item
             :colon="colon"
             label="Product"
             :label-col="labelCol"
             :wrapper-col="wrapperCol"
           >
             <a-input :size="size" v-model="formData.product" />
-          </a-form-item> 
+          </a-form-item>
         </a-col>
-        
-        
-        <a-col 
-          :xs="{span:24}" 
+
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
         >
-          <a-form-item 
+          <a-form-item
             :colon="colon"
             label="Vendor Name"
             :label-col="labelCol"
             :wrapper-col="wrapperCol"
-            
+
           >
             <a-input-search
               :size="size"
@@ -155,13 +151,13 @@
           </a-form-item>
         </a-col>
 
-        <a-col 
-          :xs="{span:24}" 
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
         >
-          <a-form-item 
+          <a-form-item
             :colon="colon"
             label="Vendor Code"
             :label-col="labelCol"
@@ -174,20 +170,19 @@
           </a-form-item>
         </a-col>
 
-
-        <a-col 
-          :xs="{span:24}" 
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
         >
-          <a-form-item 
+          <a-form-item
             :colon="colon"
             :size="size"
             label="Vendor Site"
             :label-col="labelCol"
             :wrapper-col="wrapperCol"
-            
+
           >
             <a-input
               :size="size"
@@ -196,19 +191,18 @@
           </a-form-item>
         </a-col>
 
-
-        <a-col 
-          :xs="{span:24}" 
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
         >
-          <a-form-item 
+          <a-form-item
             :colon="colon"
             label="JQE"
             :label-col="labelCol"
             :wrapper-col="wrapperCol"
-            
+
           >
           <a-select
             :size="size"
@@ -223,19 +217,18 @@
           </a-form-item>
         </a-col>
 
-
-        <a-col 
-          :xs="{span:24}" 
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
         >
-          <a-form-item 
+          <a-form-item
             :colon="colon"
             label="SQE"
             :label-col="labelCol"
             :wrapper-col="wrapperCol"
-            
+
           >
             <a-select
               :size="size"
@@ -250,19 +243,18 @@
           </a-form-item>
         </a-col>
 
-
-        <a-col 
-          :xs="{span:24}" 
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
         >
-          <a-form-item 
+          <a-form-item
             :colon="colon"
             label="SQE Manager"
             :label-col="labelCol"
             :wrapper-col="wrapperCol"
-            
+
           >
             <a-input
               :size="size"
@@ -271,50 +263,48 @@
           </a-form-item>
         </a-col>
 
-
-        <a-col 
-          :xs="{span:24}" 
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
         >
-          <a-form-item 
+          <a-form-item
             :colon="colon"
             label="Plan Date"
             :label-col="labelCol"
             :wrapper-col="wrapperCol"
-            
+
           >
-            <a-date-picker 
-              :size="size" 
-              v-model="formData.planDate" 
+            <a-date-picker
+              :size="size"
+              v-model="formData.planDate"
             />
 
           </a-form-item>
         </a-col>
 
-
-        <a-col 
-          :xs="{span:24}" 
+        <a-col
+          :xs="{span:24}"
           :sm="{span:24}"
           :md="{span:12}"
           :lg="{span:8}"
         >
-          <a-form-item 
+          <a-form-item
             :colon="colon"
             label="Create Date"
             :label-col="labelCol"
             :wrapper-col="wrapperCol"
-            
+
           >
-            <a-date-picker 
-              :size="size" 
-              v-model="formData.createDate" 
+            <a-date-picker
+              :size="size"
+              v-model="formData.createDate"
             />
-            
+
           </a-form-item>
         </a-col>
-      </a-row>          
+      </a-row>
     </a-form>
 
     <div style="margin-bottom:8px;margin-right:8px;text-align:right;">
@@ -322,11 +312,11 @@
       <a-button icon="delete" size="small"></a-button>
     </div>
 
-    <a-table  
+    <a-table
       size="small"
       :rowSelection="{selectedRowKeys: ['1']}"
-      :columns="columns" 
-      :dataSource="data" 
+      :columns="columns"
+      :dataSource="data"
     >
       <template slot="operation" slot-scope="text, record">
         <a-popconfirm
@@ -374,148 +364,147 @@
   </div>
 </template>
 <script>
-import moment from 'moment';
-import FormTest from './FormTest';
+import moment from 'moment'
+import FormTest from './FormTest'
 
-let dateFormat = 'YYYY-MM-DD';
+let dateFormat = 'YYYY-MM-DD'
 const columns = [{
-  title: 'Audit No',  
-  width:100,
+  title: 'Audit No',
+  width: 100,
   dataIndex: 'finding'
 }, {
   title: 'Audit Type',
-  width:100,
-  dataIndex: 'targetDate',
+  width: 100,
+  dataIndex: 'targetDate'
 }, {
   title: 'Product',
-  width:100,
-  dataIndex: 'product',
-},{
+  width: 100,
+  dataIndex: 'product'
+}, {
   title: 'Commodity',
-  width:100,
-  dataIndex: 'status',
+  width: 100,
+  dataIndex: 'status'
 }, {
   title: 'Vendor',
-  dataIndex: 'commonts',
+  dataIndex: 'commonts'
 }, {
   title: 'SEQ',
-  dataIndex: 'seq',
+  dataIndex: 'seq'
 }, {
   title: 'JEQ',
-  dataIndex: 'jeq',
+  dataIndex: 'jeq'
 }, {
   title: 'Plan Date',
-  dataIndex: 'plan date',
+  dataIndex: 'plan date'
 }, {
-  title:'Operation',
+  title: 'Operation',
   dataIndex: 'key',
-  scopedSlots: { customRender: 'operation' },
-}];
-
+  scopedSlots: { customRender: 'operation' }
+}]
 
 const data = [{
   key: '1',
   finding: 'xxxxxx',
   targetDate: '2019-01-01',
-  status: 'Close',
+  status: 'Close'
 }, {
   key: '2',
   dataIfindingndex: 'xxxxxx',
   targetDate: '2019-01-01',
-  
-  status: 'Close',
+
+  status: 'Close'
 }, {
   key: '3',
   finding: 'xxxxxx',
   targetDate: '2019-01-01',
-  status: 'Reject',
-}];
+  status: 'Reject'
+}]
 
 export default{
-  components : {FormTest},
+  components: {FormTest},
   props: {
-    
+
   },
-  data(){
+  data () {
     return {
-      //modal
-      visible : false,
-      //布局相关
-      labelCol:{span:8},
-      size:"small",
-      wrapperCol:{span:16},
+      // modal
+      visible: false,
+      // 布局相关
+      labelCol: {span: 8},
+      size: 'small',
+      wrapperCol: {span: 16},
       expand: false,
-      activeKey:['1'],
-      //表格相关
+      activeKey: ['1'],
+      // 表格相关
       data,
       columns,
 
-      //form      
+      // form
       form: this.$form.createForm(this),
-      colon:false,
-      formData : {
-        relatedRecordNo : "A20190101001",
-        reAudit:"Y",
-        auditType:"Certify Audit",
-        commodityName:"Test1",
-        commodityCode:"commodityCode",
-        product:"product",
-        vendorName:"vendorName",
-        vendorCode:"vendorCode",
-        vendorSite:"vendorSite",
-        jqeId:"jack",
-        sqeId:"Lucy",
-        sqeManager:"Zhang San",
-        planDate:moment("2019-02-03", dateFormat),
-        createDate:moment("2019-01-03", dateFormat),
-        conclusion:"Conclusion",
-        comments:"Comments"
+      colon: false,
+      formData: {
+        relatedRecordNo: 'A20190101001',
+        reAudit: 'Y',
+        auditType: 'Certify Audit',
+        commodityName: 'Test1',
+        commodityCode: 'commodityCode',
+        product: 'product',
+        vendorName: 'vendorName',
+        vendorCode: 'vendorCode',
+        vendorSite: 'vendorSite',
+        jqeId: 'jack',
+        sqeId: 'Lucy',
+        sqeManager: 'Zhang San',
+        planDate: moment('2019-02-03', dateFormat),
+        createDate: moment('2019-01-03', dateFormat),
+        conclusion: 'Conclusion',
+        comments: 'Comments'
       },
-      testData:[
-        {key:"Test1",value:"Test1"},
-        {key:"Test2",value:"Test2"},
-        {key:"Test3",value:"Test3"},
-        {key:"Test4",value:"Test4"},
-        {key:"Test5",value:"Test5"},
-        {key:"Test6",value:"Test6"},
-        {key:"Test7",value:"Test7"},
-        {key:"Test8",value:"Test8"},
-        {key:"Test9",value:"Test9"},
+      testData: [
+        {key: 'Test1', value: 'Test1'},
+        {key: 'Test2', value: 'Test2'},
+        {key: 'Test3', value: 'Test3'},
+        {key: 'Test4', value: 'Test4'},
+        {key: 'Test5', value: 'Test5'},
+        {key: 'Test6', value: 'Test6'},
+        {key: 'Test7', value: 'Test7'},
+        {key: 'Test8', value: 'Test8'},
+        {key: 'Test9', value: 'Test9'}
       ]
     }
   },
   methods: {
     moment,
     handleSearch  (e) {
-      e.preventDefault();
+      e.preventDefault()
       this.form.validateFields((error, values) => {
-        console.log('error', error);
-        console.log('Received values of form: ', values);
-      });
+        console.log('error', error)
+        console.log('Received values of form: ', values)
+      })
     },
 
     handleReset () {
-      this.form.resetFields();
+      this.form.resetFields()
     },
 
     toggle  () {
-      this.expand = !this.expand;
+      this.expand = !this.expand
     },
     onDelete (record) {
-      console.log(record);
+      console.log(record)
     },
-    showModal(){
-      this.visible = true;
+    showModal () {
+      this.visible = true
     },
-    handleOk(){
-      this.visible = false;
+    handleOk () {
+      this.visible = false
     },
-    handleCancel(){
-      this.visible = false;
+    handleCancel () {
+      this.visible = false
     }
   },
-  computed :{
-    
+  computed: {
+
   }
 }
 </script>

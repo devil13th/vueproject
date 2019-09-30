@@ -9,21 +9,20 @@
     >
       <div class="logo" />
       <a-menu theme="dark" mode="inline" :defaultSelectedKeys="['1']">
-        
+
           <a-sub-menu key="sub1">
             <span slot="title"><a-icon type="user" /><font v-if="!collapsed">subnav 1</font></span>
             <a-menu-item key="1x"><router-link to="/">main</router-link></a-menu-item>
             <a-menu-item key="2x"><router-link to="/RouterParent">RouterParent</router-link></a-menu-item>
             <a-menu-item key="3x"><router-link to="/RouterParent/RouterChild">RouterChild</router-link></a-menu-item>
             <a-menu-item key="4x"><router-link to="/StateTest">StateTest</router-link></a-menu-item>
-            <a-menu-item key="5x"><router-link to="/FormTest">FormTest</router-link></a-menu-item> 
-            
-            <a-menu-item key="5x1"><router-link to="/AuditList">AuditList</router-link></a-menu-item> 
-            
+            <a-menu-item key="5x"><router-link to="/FormTest">FormTest</router-link></a-menu-item>
 
-            <a-menu-item key="6x"><router-link to="/StateTest/Cpmt03">Vuex</router-link></a-menu-item>  
-            <a-menu-item key="7x"><router-link to="/vuextest">Vuex</router-link></a-menu-item>  
-           
+            <a-menu-item key="5x1"><router-link to="/AuditList">AuditList</router-link></a-menu-item>
+
+            <a-menu-item key="6x"><router-link to="/StateTest/Cpmt03">Vuex</router-link></a-menu-item>
+            <a-menu-item key="7x"><router-link to="/vuextest">Vuex</router-link></a-menu-item>
+
           </a-sub-menu>
           <a-sub-menu key="sub2">
             <span slot="title"><a-icon type="laptop" /><font v-if="!collapsed">subnav 2</font></span>
@@ -64,18 +63,18 @@
 <script>
 export default {
   methods: {
-    onCollapse(collapsed, type) {
-      console.log(collapsed, type);
+    onCollapse (collapsed, type) {
+      console.log(collapsed, type)
     },
-    onBreakpoint(broken) {
-      console.log(broken);
+    onBreakpoint (broken) {
+      console.log(broken)
     }
   },
-  data(){
+  data () {
     return {
-      collapsed: false,
+      collapsed: false
     }
-  },
+  }
 }
 </script>
 <style>
