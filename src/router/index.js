@@ -8,6 +8,7 @@ import FormTest from '@/components/formtest/FormTest'
 import Cpmt03 from '@/components/statetest/Cpmt03'
 import VuexTest from '@/components/vuextest/VuexTest'
 import AuditList from '@/components/formtest/AuditList'
+import JsxTest from '@/components/jsxtest/jsx'
 Vue.use(Router)
 
 export default new Router({
@@ -55,6 +56,11 @@ export default new Router({
       path: '/vuextest',
       name: 'VuexTest',
       component: VuexTest
+    },
+    {
+      path: '/jsxtest',
+      name: 'JSXtest',
+      component: JsxTest
     }
   ]
 })

@@ -22,6 +22,7 @@
 
             <a-menu-item key="6x"><router-link to="/StateTest/Cpmt03">Vuex</router-link></a-menu-item>
             <a-menu-item key="7x"><router-link to="/vuextest">Vuex</router-link></a-menu-item>
+            <a-menu-item key="8x"><router-link to="/jsxtest">Jsx</router-link></a-menu-item>
 
           </a-sub-menu>
           <a-sub-menu key="sub2">
